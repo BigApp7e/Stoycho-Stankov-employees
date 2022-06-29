@@ -1,0 +1,14 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-10 mx-auto">
+      <h1>File Upload Status</h1>
+      <!--display error if any-->
+      <div class="alert alert-danger" role="alert" th:if="${!status}">
+        <strong>Error:</strong>
+        <span th:text="${message}"></span>
+      </div>
+      <!--display users list-->
+      <p th:text="${message}"></p>
+    </div>
+  </div>
+</div>
